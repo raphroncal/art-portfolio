@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import {Crimson_Pro, Geist, Geist_Mono} from "next/font/google";
+import {Crimson_Pro} from "next/font/google";
 import "./globals.css";
 
 const crimsonPro = Crimson_Pro({
