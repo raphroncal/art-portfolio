@@ -17,8 +17,8 @@ export default function Home() {
           ></Image>
           <p>petarht</p>
           <p className="text-sm/4 text-pretty">
-            Hi! I'm Petarht, an illustrator based in the Philippines. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus.
+            Hi! Im Petarht, an illustrator based in the Philippines. Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit. Fusce luctus.
           </p>
           <div className="flex justify-center items-center gap-x-2">
             <Link
