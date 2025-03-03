@@ -2,20 +2,34 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import {Allison} from "next/font/google";
+
+const allison = Allison({
+  variable: "--font-carattere",
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function Home() {
+  // let importAll = (r) => {
+  //   let images = {};
+  //   r.keys().map((item: string, index: number) => { images[item.replace('../../public/art','')] = r(item); });
+  //   return images;
+  // }
+
+  // const images = importAll(require.context('../../public/art', false, /\.(png|jpe?g|svg)$/));
   return (
     <div className="flex">
-      <div className="flex flex-col justify-between px-10 lg:px-20 pt-24 pb-10 w-[30%] h-screen bg-white text-center">
+      <div className="flex flex-col justify-between px-10 lg:px-20 pt-20 pb-10 w-[30%] h-screen bg-white text-center">
         <div className="flex flex-col items-center gap-y-6">
           <Image
             src={"/test-images/mushroom.png"}
             alt="petarht profile icon"
-            width={128}
-            height={128}
+            width={84}
+            height={84}
             className="rounded-full"
           ></Image>
-          <p>petarht</p>
+          <p className={`${allison.className} text-5xl/9`}>petarht</p>
           <p className="text-sm/4 text-pretty">
             Hi! Im Petarht, an illustrator based in the Philippines. Lorem ipsum
             dolor sit amet, consectetur adipiscing elit. Fusce luctus.
@@ -27,8 +41,8 @@ export default function Home() {
               target="_blank"
             >
               <svg
-                width="32"
-                height="32"
+                width="28"
+                height="28"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +60,8 @@ export default function Home() {
               target="_blank"
             >
               <svg
-                width="32"
-                height="32"
+                width="28"
+                height="28"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,8 +80,8 @@ export default function Home() {
               }}
             >
               <svg
-                width="28"
-                height="28"
+                width="26"
+                height="26"
                 viewBox="0 0 28 28"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +120,7 @@ export default function Home() {
           <p className="text-xs">2025 petarht</p>
         </div>
       </div>
-      <div className="flex-grow bg-black"></div>
+      <div className="flex-grow bg-black text-white px-20 py-6">div</div>
     </div>
   );
 }
