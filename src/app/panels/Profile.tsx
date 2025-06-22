@@ -1,10 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { Allison } from "next/font/google";
 import avatar from "@/assets/avatar.png";
 import { CopyrightIcon } from "../icons/CopyrightIcon";
-import { InstagramIcon } from "../icons/InstagramIcon";
-import { TikTokIcon } from "../icons/TikTokIcon";
 import { SocialLinks } from "../components/SocialLinks";
 
 const allison = Allison({
@@ -19,17 +16,6 @@ export type TSocial = {
 };
 
 export const Profile = () => {
-  const socials = {
-    instagram: {
-      link: "https://www.instagram.com/petarht/",
-      Icon: InstagramIcon,
-    } as TSocial,
-    tiktok: {
-      link: "https://www.tiktok.com/@petarht?_t=8sUMxkU3MBz&_r=1",
-      Icon: TikTokIcon,
-    } as TSocial,
-  };
-
   return (
     <div className="flex flex-col justify-between px-10 lg:px-20 pt-20 pb-10 w-[30%] h-screen bg-white text-center">
       <div className="flex flex-col items-center gap-y-6">
