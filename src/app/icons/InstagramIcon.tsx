@@ -1,4 +1,4 @@
-import { SocialIconProps } from "../components/SocialLink";
+import { SocialIconProps } from "../components/LinkComponent";
 
 export const InstagramIcon: React.FC<SocialIconProps> = ({ color }) => {
   return (

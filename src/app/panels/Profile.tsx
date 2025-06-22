@@ -2,11 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { Allison } from "next/font/google";
 import avatar from "@/assets/avatar.png";
-import { SocialLink } from "../components/SocialLink";
 import { CopyrightIcon } from "../icons/CopyrightIcon";
-import { EmailIcon } from "../icons/EmailIcon";
 import { InstagramIcon } from "../icons/InstagramIcon";
 import { TikTokIcon } from "../icons/TikTokIcon";
+import { SocialLinks } from "../components/SocialLinks";
 
 const allison = Allison({
   variable: "--font-carattere",
@@ -50,13 +49,7 @@ export const Profile = () => {
           dolor sit amet, consectetur adipiscing elit. Fusce luctus.
         </p>
 
-        <div className="flex justify-center items-center gap-x-2">
-          <SocialLink social={socials.instagram} />
-          <SocialLink social={socials.tiktok} />
-          <Link href="mailto:petarht14@gmail.com">
-            <EmailIcon />
-          </Link>
-        </div>
+        <SocialLinks />
       </div>
 
       <div className="flex justify-center items-center gap-1">
