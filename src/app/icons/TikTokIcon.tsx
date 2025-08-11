@@ -1,6 +1,6 @@
 import { SocialIconProps } from "../components/LinkComponent";
 
-export const TikTokIcon: React.FC<SocialIconProps> = ({ color }) => {
+export const TikTokIcon: React.FC<SocialIconProps> = () => {
   return (
     <svg
       width="28"

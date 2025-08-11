@@ -1,6 +1,6 @@
 import { SocialIconProps } from "../components/LinkComponent";
 
-export const InstagramIcon: React.FC<SocialIconProps> = ({ color }) => {
+export const InstagramIcon: React.FC<SocialIconProps> = () => {
   return (
     <svg
       width="28"
