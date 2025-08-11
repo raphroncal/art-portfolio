@@ -17,7 +17,7 @@ export type TSocial = {
 
 export const Profile = () => {
   return (
-    <div className="flex flex-col justify-between px-10 lg:px-20 pt-20 pb-10 w-[30%] h-screen bg-white text-center">
+    <div className="flex flex-col justify-between px-10 lg:px-20 pt-20 pb-10 w-[30%] min-w-[30%] h-screen bg-white text-center">
       <div className="flex flex-col items-center gap-y-6">
         <div className="flex flex-col">
           <Image

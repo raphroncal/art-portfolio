@@ -1,13 +1,13 @@
 "use client";
 
 import { Profile } from "./panels/Profile";
-import { Art } from "./panels/Art";
+import { Gallery } from "./panels/Gallery";
 
 export default function Home() {
   return (
     <div className="flex">
       <Profile />
-      <Art />
+      <Gallery />
     </div>
   );
 }
