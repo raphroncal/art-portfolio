@@ -26,8 +26,9 @@ export const Profile = () => {
         </div>
 
         <p className="text-sm/4 text-pretty">
-          Hi! Im Petarht, an illustrator based in the Philippines. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Fusce luctus.
+          Hi, I’m Petarht! A Filipina artist who loves to play around with all
+          kinds of mediums. Still, I have my own little specialties that make my
+          art uniquely me. Now, come and take a stroll through my works!
         </p>
 
         <SocialLinks />
