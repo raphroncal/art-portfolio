@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { TSocial } from "../panels/Profile";
+import { TSocial } from "../lib/socials";
 
 export type SocialIconProps = {
   color?: string;
