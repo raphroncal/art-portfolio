@@ -1,4 +1,4 @@
-import { SocialIconProps } from "../components/LinkComponent";
+import { SocialIconProps } from "../ui/LinkComponent";
 
 export const TikTokIcon: React.FC<SocialIconProps> = () => {
   return (
