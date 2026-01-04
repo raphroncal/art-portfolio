@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import avatar from "@/assets/avatar.png";
+import banner from "@/assets/home/banner.png";
 import { artworks } from "./lib/artworks";
 import { ArtCategory } from "./ui/home/ArtCategory";
 import { allison, baskervville } from "@/assets/fonts/fonts";
+import { NavigationBar } from "./ui/NavigationBar";
 
 export default function Home() {
   const { branding, charcoal, commission, exploration } = artworks;
@@ -36,7 +38,13 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col py-[60px] items-center gap-10">
+    <div className="flex flex-col pb-60 items-center gap-10">
+      <NavigationBar />
+
+      <div className="h-80 w-full relative">
+        <Image src={banner} alt="banner art" layout="fill" objectFit="cover" />
+      </div>
+
       <div className="flex flex-col items-center gap-y-6">
         <div className="flex flex-col items-center gap-y-2">
           <Image

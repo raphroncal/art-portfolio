@@ -1,5 +1,4 @@
-import { Allison } from "next/font/google";
-import { Baskervville } from "next/font/google";
+import { Allison, Baskervville } from "next/font/google";
 
 export const allison = Allison({
   variable: "--font-carattere",

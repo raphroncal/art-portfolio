@@ -8,12 +8,13 @@ export default function WorksLayout({
 }>) {
   return (
     <section className="flex flex-col p-10 gap-5">
-      <div className="flex gap-3 items-center">
-        <BackArrowIcon />
-        <Link href="/">
+      <Link href="/">
+        <div className="flex gap-3 items-center">
+          <BackArrowIcon />
+
           <p className="text-xl">Back</p>
-        </Link>
-      </div>
+        </div>
+      </Link>
       <div className="px-64">{children}</div>
     </section>
   );
