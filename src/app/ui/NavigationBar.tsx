@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { nothing } from "@/assets/fonts/fonts";
 
 export const NavigationBar = () => {
   return (
-    <div className="z-10 font-inter flex w-full px-10 py-10 gap-12 bg-gradient-to-b from-black/75 to-transparent fixed">
+    <div className="z-10 font-inter flex items-center w-full px-10 py-10 gap-12 bg-gradient-to-b from-black/75 to-transparent fixed">
       <Link href="/" className="text-white">
-        petarht
+        <p className={`${nothing.className} text-2xl`}>petarht</p>
       </Link>
       <div className="flex gap-10">
         <Link href="/" className="text-white">
