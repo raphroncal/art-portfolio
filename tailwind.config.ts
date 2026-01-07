@@ -50,6 +50,10 @@ export default {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+        petahrt: {
+          white: "#FFFCF3",
+          black: "#242021",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
