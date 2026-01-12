@@ -3,7 +3,7 @@ import { nothing } from "@/assets/fonts/fonts";
 
 export const NavigationBar = () => {
   return (
-    <div className="z-10 font-inter flex items-center w-full px-10 py-10 gap-12 bg-gradient-to-b from-black/75 to-transparent fixed">
+    <div className="z-10 font-inter flex items-center w-full px-10 py-10 gap-12 bg-gradient-to-b from-black/75 to-transparent fixed top-0">
       <Link href="/" className="text-petahrt-white">
         <p className={`${nothing.className} text-2xl`}>petarht</p>
       </Link>
