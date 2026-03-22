@@ -8,11 +8,11 @@ import { Tab } from "./ui/home/Tab";
 import { nothing } from "@/assets/fonts/fonts";
 import { Gallery } from "./ui/home/Gallery";
 
-export type TTabs = "digital" | "traditional" | "branding" | "animation";
+export type TTabs = "digital" | "traditional" | "branding";
 
 export default function Home() {
   const [currentTab, setCurrentTab] = useState<TTabs>("digital");
-  const tabs: TTabs[] = ["digital", "traditional", "branding", "animation"];
+  const tabs: TTabs[] = ["digital", "traditional", "branding"];
 
   const setTabHandler = useCallback((str: TTabs) => {
     setCurrentTab(str);
@@ -38,11 +38,7 @@ export default function Home() {
           </div>
         </div>
 
-        {currentTab !== "animation" ? (
-          <Gallery artworks={artworks[currentTab]} />
-        ) : (
-          <div>This section is a work in progress. Stay tuned!</div>
-        )}
+        <Gallery artworks={artworks[currentTab]} />
       </div>
     </div>
   );
